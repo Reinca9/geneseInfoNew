@@ -1,13 +1,205 @@
 body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  font-family: "Roboto", sans-serif;
+  font-size: 140%;
+
+}
+.menu-item {
+  display: inline-block;
+  position: relative;
+  
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #009136; /* Set background color to black */
+  color: white; /* Set font color to white */
+  border-radius: 5px;
+  padding: 10px;
+  box-shadow: 0px 8px 16px 0px rgba(110, 110, 110, 0.2);
+  z-index: 1;
+  width: 150px; /* Set the width of the dropdown */
+  height: 90px;
+
+}
+
+.dropdown:hover .dropdown-content {
+  display: flex;
+  flex-direction: column;
+  margin-left:38%;
+  margin-top: 0%;
+  
+}
+
+.navbar{
+  display: flex;
+  text-decoration: none;
+  width: 100%;
+  margin-top: -4%;
+}
+.materiels{
+  text-decoration: none;
+  color: #009136;
+  margin-top: 10px;
+
+}
+.logiciels{
+  text-decoration: none;
+  color: #009136;
+  margin-top: 20px;
+}
+.logo{
+  width: 80%;
+  height: 80%;
+  margin-left: 10%;
+  margin-top: 15%;
+}
+.menu{
+  display: flex;
+  margin-top: 10%;
+}
+.menuElements{
+  margin-left: 80px;
+  text-decoration: none;
+  color: #009136;
+  font-weight: bold;
+}
+.menuElements:hover{
+  text-decoration: underline;
+  height: 5px;
+
+}
+.hrHomeBody{
+  border-color: #009136;
+  background-color: #009136;
+  width:100%;
+  height: 3px;
+  margin-top: 3%;
+
+}
+.homeBodyMain{
+  margin-top: 0%;
+  width: 100%;
+  height: 600px;
+  
+
+}
+.backgroundImg{
+  margin-top: 0%;
+  width: 100%;
+  border-radius: 5px;
+}
+.dropDownItem{
+  color: white;
+}
+.productCardsDiv{
+  display: flex;
+  color: #000000;
+  margin-left: 0%;
+  margin-left: 5%;
+}
+.productCards{
+  width: 30%;
+  height: 800px;
+  background-color: rgb(253, 255, 254);
+  position: relative;
+  border-radius: 2%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 1%;
+  margin-top: -54%;
+  
+
+}
+.productCards img{
+width: 400px;
+height:400px;
+
+}
+.productCards p{
+ padding: 3%;
+  
+  }
+.productCards h1{
+  font-weight: lighter;
+  color: #009136;
+  font-size: 150%;
+  margin-top: 10%;
+  font-family: 'Roboto' sans-serif;
+}
+.footerDiv{
+  background-color: #ffffff;
+  margin-top: 24%;
+  height: 150px;
+  display: flex;
+  justify-content:left ;
+
+}
+.footerLinksFlex{
+
+  display: flex;
+  flex-direction: column;
+  padding: 2%;
+}
+.nousContacterFooter {
+  text-decoration: none;
+  color: #009136;
+  font-family: "Roboto", sans-serif;
+  font-weight: bold;
+  transition: box-shadow 0.3s; /* Add a transition for smooth effect */
+}
+.nousContacterFooter:hover {
+  text-decoration: underline;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Add box shadow on hover */
+}
+.facebookIC{
+color: #009136;
+font-size: 200%;
+margin-top: 5%;
+  
+}
+.accueil{
+  text-decoration: none;
+  color: #009136;
+  font-weight: bold;
+}
+.contactMainDiv{
+  margin-top: 5%;
+  margin-left: 15%;
+  border-radius: 10px;
+  width: 70%;
+  height: 300px;
+  display: flex;
+  margin-left: 15%;
+
+
+
+}
+.contactMainDiv h1{
+ color: #009136;
+}
+.iconAndTextdiv{
+  display: flex;
+  
+}
+.contacticon{
+  margin-top: 7%;
+ margin-right: 2%;
+}
+.googleMapMain{
+  margin-left: 50%;
+}
+.textContactDiv{
+  display: flex;
+  flex-direction: column;
+}
+.productCardsButton{
+  background-color: #009136;
+  color: white;
+  height: 40px;
+  width: 30%;
+  border-radius: 15px;
+  border: none;
+  font-weight: bold;
 }

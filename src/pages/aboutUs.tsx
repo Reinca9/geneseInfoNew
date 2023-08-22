@@ -9,6 +9,7 @@ const About: React.FC = () => {
   return (
   <div>
    <Navbar /> 
+   <hr  className="hrHomeBody"/>
    <Footer/>
   </div>
   );

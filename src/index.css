@@ -129,7 +129,7 @@ height:400px;
   font-family: 'Roboto' sans-serif;
 }
 .footerDiv{
-  background-color: #ffffff;
+  background-color: #009136;
   margin-top: 24%;
   height: 150px;
   display: flex;
@@ -144,7 +144,7 @@ height:400px;
 }
 .nousContacterFooter {
   text-decoration: none;
-  color: #009136;
+  color: #ffffff;
   font-family: "Roboto", sans-serif;
   font-weight: bold;
   transition: box-shadow 0.3s; /* Add a transition for smooth effect */
@@ -159,6 +159,12 @@ font-size: 200%;
 margin-top: 5%;
   
 }
+.facebookICfooter{
+  color: #ffffff;
+  font-size: 200%;
+  margin-top: 5%;
+    
+  }
 .accueil{
   text-decoration: none;
   color: #009136;
@@ -202,4 +208,96 @@ margin-top: 5%;
   border-radius: 15px;
   border: none;
   font-weight: bold;
+}
+.notreMatInfoh1{
+  background-color: #009136;
+  border-radius: 10px;
+  padding: 8px;
+  width: 30%;
+  justify-content: center;
+  
+
+}
+.materialBodyMain{
+  width: 100%;
+  
+}
+.materialBodyMain div{
+  display: flex;
+  
+}
+.reactDivMaterial{
+  display: flex;
+  justify-content: center;
+  margin-bottom: -15%;
+}
+.notreMatInfoh1{
+  font-weight: bold;
+  font-size: 150%;
+  color: white;
+  display: flex;
+  width: 25%;
+}
+.materialCard{
+  border-radius: 5px;
+  width: 30%;
+  height:400px;
+  color: #009136;
+  font-weight: lighter;
+  font-size: 70%;
+  margin: 0.5%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.materialCard h1{
+  margin-left: 2%;
+}
+.materialCard div{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.materialCard div img{
+  height: 200px;
+  
+}
+.materialCardDiv{
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  justify-content: center;
+  margin-top: 2%;
+}
+.materialCard p{
+  width: 100%;
+  font-weight: bold;
+  color: black;
+  margin-left: 15%;
+}
+.materialCardPrice{
+  font-weight: lighter;
+  width: 100%;
+  color: white;
+}
+.materialCardPrice p{
+  color: white;
+  padding: 6px;
+  width: 50%;
+  margin-right: 10%;
+}
+.materialCardPrice span{
+  color: rgb(0, 0, 0);
+  padding: 5px;
+  width: 50%;
+  font-weight: bold;
+}
+.LimitedOfferP{
+  background-color: rgb(190, 30, 30);
+  border-radius: 5px;
+}
+
+.EconomisezP{
+  background-color: #009136;
+  border-radius: 5px;
 }

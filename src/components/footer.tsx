@@ -10,7 +10,7 @@ const Footer: React.FC = () => {
         <Link className="nousContacterFooter"to="/contact">Nous contacter</Link>
         <a href="https://www.facebook.com/geneseinfo.fr/"
         >
-          <FontAwesomeIcon icon={faFacebook} className="facebook-icon facebookIC" />
+          <FontAwesomeIcon icon={faFacebook} className="facebook-icon facebookICfooter" />
         </a>
       </div>
     </div>

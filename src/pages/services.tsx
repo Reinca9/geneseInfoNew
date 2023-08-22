@@ -9,6 +9,7 @@ const Services: React.FC = () => {
   return (
   <div>
    <Navbar /> 
+   <hr  className="hrHomeBody"/>
    <Footer/>
   </div>
   );

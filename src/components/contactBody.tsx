@@ -1,5 +1,4 @@
 import React from "react";
-import Iframe from "react-iframe";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faPhone } from "@fortawesome/free-solid-svg-icons";
 import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
@@ -9,6 +8,7 @@ import GoogleMapApi from "./googleMapApi";
 const ContactBody: React.FC = () => {
   return (
     <div >
+       <hr  className="hrHomeBody"/>
        <div className="contactMainDiv">
           <div className="textContactDiv">
             <h1>Nous contacter</h1>

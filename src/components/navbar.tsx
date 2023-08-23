@@ -27,10 +27,15 @@ const Navbar: React.FC = () => {
             </div>
           </div>
         </div>
-        <div className="menu-item">
-          <Link className="services  menuElements" to="/services">
-            Services
-          </Link>
+        <div className="menu-item-services">
+          <div className="dropdown-services">
+            <span className="services  menuElements">Services</span>
+            <div className="dropdown-content-services">
+              <Link className="telephonie dropDownItem link-no-underline" to="/téléphonie">
+                Téléphonie
+              </Link>
+            </div>
+          </div>
         </div>
         <div className="menu-item">
           <Link className="contact  menuElements" to="/contact">

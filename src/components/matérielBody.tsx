@@ -1,107 +1,41 @@
 import React from "react";
-import Product from "../assets/portableAsusRog.png";
-
+import { Link } from "react-router-dom";
+import { materielList } from "../data/materielData";
 
 const MaterialBody: React.FC = () => {
   return (
     <div className="reactDivMaterial">
-        <div  className="materialBodyMain">
-            
-            <div className="materialCardDiv">
-                    <div className="materialCard">
-                        <div>
-                        <img src={Product} alt="" />
-                        </div>
-                        <div className="materialCardTextP"> 
-                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Adipisci assumenda in consequatur officiis accusamus nobis volupt
-                            as perspiciatis incidunt maxime. Ipsam sunt earum eaque expedita </p>
-                        </div>
-                        <div className="materialCardPrice">
-                            <p className="EconomisezP">Economisez 125,99€</p>
-                            <span>1499,99€</span>
-                        </div>               
-                    </div>
-                    <div className="materialCard">
-                        <div>
-                        <img src={Product} alt="" />
-                        </div>
-                        <div className="materialCardTextP"> 
-                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Adipisci assumenda in consequatur officiis accusamus nobis volupt
-                            as perspiciatis incidunt maxime. Ipsam sunt earum eaque expedita </p>
-                        </div>
-                        <div className="materialCardPrice">
-                            <p className="LimitedOfferP">Offre à durée limitée</p>
-                            <span>1499,99€</span>
-                        </div>               
-                    </div>
-                    <div className="materialCard">
-                        <div>
-                            <img src={Product} alt="" />
-                        </div>
-                        <div className="materialCardTextP"> 
-                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Adipisci assumenda in consequatur officiis accusamus nobis volupt
-                            as perspiciatis incidunt maxime. Ipsam sunt earum eaque expedita </p>
-                        </div>
-                        <div className="materialCardPrice">
-                            <p className="EconomisezP">Economisez 125,99€</p>
-                            <span>1499,99€</span>
-                        </div>
-                    </div>
-                    <div className="materialCard">
-                        <div>
-                            <img src={Product} alt="" />
-                        </div>
-                        <div className="materialCardTextP"> 
-                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Adipisci assumenda in consequatur officiis accusamus nobis volupt
-                            as perspiciatis incidunt maxime. Ipsam sunt earum eaque expedita </p>
-                        </div>
-                        <div className="materialCardPrice">
-                            <p className="EconomisezP">Economisez 125,99€</p>
-                            <span>1499,99€</span>
-                        </div>
-                    </div>
-                    <div className="materialCard">
-                        <div>
-                        <img src={Product} alt="" />
-                        </div>
-                        <div className="materialCardTextP"> 
-                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Adipisci assumenda in consequatur officiis accusamus nobis volupt
-                            as perspiciatis incidunt maxime. Ipsam sunt earum eaque expedita </p>
-                        </div>
-                        <div className="materialCardPrice">
-                            <p className="EconomisezP">Economisez 125,99€</p>
-                            <span>1499,99€</span>
-                        </div>                  
-                    </div>
-                    <div className="materialCard">
-                        <div>
-                        <img src={Product} alt="" />
-                        </div>
-                        <div className="materialCardTextP"> 
-                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Adipisci assumenda in consequatur officiis accusamus nobis volupt
-                            as perspiciatis incidunt maxime. Ipsam sunt earum eaque expedita </p>
-                        </div>
-                        <div className="materialCardPrice">
-                            <p className="LimitedOfferP">Offre à durée limitée</p>
-                            <span>1499,99€</span>
-                        </div>
-                  </div>
-                  <div className="materialCard">
-                        <div>
-                        <img src={Product} alt="" />
-                        </div>
-                        <div className="materialCardTextP"> 
-                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Adipisci assumenda in consequatur officiis accusamus nobis volupt
-                            as perspiciatis incidunt maxime. Ipsam sunt earum eaque expedita </p>
-                        </div>
-                        <div className="materialCardPrice">
-                        <p className="EconomisezP">Economisez 125,99€</p>
-                        <span>1499,99€</span>
-                        </div>
-                  </div>
-                  
+      <div className="materialBodyMain">
+        <div className="materialCardDiv">
+          {materielList.map((materiel, index) => (
+            <div key={index} className="materialCard">
+              <Link
+                to={`/details/${encodeURIComponent(materiel.name)}`}
+                className="link-no-underline" // Add the class here
+              >
+                <div>
+                  <img src={materiel.imageUrl} alt={materiel.name} />
+                </div>
+                <div className="materialCardTextP">
+                  <p>{materiel.description}</p>
+                </div>
+                <div className="materialCardPrice">
+                  <p
+                    className={
+                      materiel.offre === "Offre à durée limitée"
+                        ? "LimitedOfferP"
+                        : "EconomisezP"
+                    }
+                  >
+                    {materiel.offre}
+                  </p>
+                  <span>{materiel.price.toFixed(2)}€</span>
+                </div>
+              </Link>
             </div>
+          ))}
         </div>
+      </div>
     </div>
   );
 };

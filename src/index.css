@@ -178,8 +178,9 @@ border-radius: 10px;
   transition: box-shadow 0.3s; /* Add a transition for smooth effect */
 }
 .nousContacterFooter:hover {
-  text-decoration: underline;
+  text-decoration: none;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Add box shadow on hover */
+  color: #000000;
 }
 .facebookIC{
 color: #009136;
@@ -229,11 +230,11 @@ margin-top: 5%;
   flex-direction: column;
 }
 .productCardsButton{
-  background-color: #009136;
+  background-color: #e42727;
   color: white;
   height: 40px;
   width: 100%;
-  border-radius: 15px;
+  border-radius: 5px;
   border: none;
   font-weight: bold;
   margin-top: 1%;
@@ -355,20 +356,195 @@ margin-top: 5%;
   text-decoration: none;
 }
 .phoneBodyMain{
-  margin: 1%;
   display: flex;
   width: 100%;
   flex-direction: column;
   align-items: center;
 }
-.phoneBodyMain h2{
+.téléphonieH2{
   color: #009136;
 }
 .phoneBodyMain video{
- width: 60%;
+ width: 97.5%;
  border-radius: 5px;
- padding: 1px;
+margin-bottom: 1%;
+
 }
-.telephoniePDFdiv{
+.téléphoniePDF{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin-bottom: -15%;
+  margin-left: 0.8%;
+}
+.reactDivMaterial2{
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  margin-left: 20%;
+  border-radius: 5px;
+  margin-bottom: -10%;
+
+}
+.reactDivMaterial2 h2{
+  margin-top: 5%;
+  margin-bottom: 5%;
+  margin-left: 12%;
+}
+.Matérieldiv{
+  color: #009136;
+  font: 150%;
+  display: flex;
+  align-items: center;
+  font-weight: bold;
+  margin-top: 1%;
+  border-radius: 5px;
+  border: solid rgb(197, 197, 197);
+  margin-left: -15%;
+  width: 50%;
+  padding: 1%;
+}
+.Matérieldiv img{
+ margin-right: 2%;
+  
+  
+}
+
+.pcIMG{
+  width: 200px;
+  height: 200px;
   margin-left: 2%;
+}
+.serverImg{
+  width: 200px;
+  height: 200px;
+  margin-left: 2%;
+}
+.tabSPImg{
+  width: 200px;
+  height: 200px;
+  margin-left: 2%;
+}
+.cameraIMG{
+  width: 200px;
+  height: 200px;
+  margin-left: 2%;
+}
+.accEtPeriph{
+  width: 200px;
+  height: 200px;
+  margin-left: 2%;
+}
+.MatérieldivTxt{
+  display: flex;
+  flex-direction: column;
+  margin-left: -15%;
+  color: #009136;
+  font-weight: bold;
+}
+.office{
+  width: 50px;
+  height: 50px;
+
+}
+.officeTxt{
+  color: rgb(219, 77, 11);
+}
+.pWithOfficeLogo{
+  display: flex;
+  margin-right: 5px;
+}
+.officeDiv{
+  display: flex;
+  margin-top: -1.4%;
+  margin-left: 5px;
+}
+.microsoftLogo{
+  width: 50px;
+  height: 50px;
+  margin-right: 5px;
+}
+.microsoftDiv{
+  display: flex;
+  margin-left: 5px;
+  margin-right: 5px;
+  margin-top: -1.4%;
+}
+.microsoftDiv2{
+  display: flex;
+  margin-left: 5px;
+  margin-right: 5px;
+}
+.pWithMicrosoftLogo{
+  display: flex;
+
+
+}
+.microsoftTxt{
+  color: rgb(75, 75, 75);
+  margin-right: 6px;
+}
+.Azure{
+  width: 70px;
+  height: 50px;
+}
+.azureTxt{
+  color: rgb(17, 112, 253);
+}
+.azureSpan{
+  display: flex;
+  margin-left: 5px;
+  margin-right: 5px;
+}
+.microsoftAndAzureDiv{
+  display: flex;
+}
+.sophosPandaDiv{
+  display: flex;
+  flex-direction: row;
+
+}
+
+.sophosTxt{
+  color: rgb(15, 116, 248);
+  margin-right: 5px;
+}
+.pandaTxt{
+  color: rgb(26, 91, 177);
+  margin-left: -10px;
+}
+.sophosImg{
+  width: 50px;
+  height: 50px;
+  margin-left: 5px;
+  margin-right: 5px;
+}
+.pandaImg{
+  width: 80px;
+  height: 50px;
+}
+.sophosDiv{
+  display: flex;
+  margin-top: -1.4%;
+
+}
+.pandaDiv{
+  display: flex;
+  margin-top: -1.4%;
+}
+.sophosPandaDiv{
+  display: flex;
+}
+.aboutMainDiv{
+  height: 600px;
+  margin-bottom: -15%;
+  display: flex;
+  justify-content: center;
+  padding: 30px;
+  margin-top: 1%;
+}
+.aboutP{
+  color: #009136;
+  color: #707070;
+  font-size: 120%;
 }

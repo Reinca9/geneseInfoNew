@@ -1,7 +1,7 @@
 import React from "react";
 import Navbar from "../components/navbar";
 import Footer from "../components/footer";
-import MaterialBody from "../components/matérielBody";
+import MaterialBody2 from "../components/matérielBody2";
 
 const Materials: React.FC = () => {
 
@@ -9,7 +9,7 @@ const Materials: React.FC = () => {
   <div>
    <Navbar /> 
    <hr  className="hrHomeBody"/>
-   <MaterialBody/>
+   <MaterialBody2/>
    <Footer/>
   </div>
   );

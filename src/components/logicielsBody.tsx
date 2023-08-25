@@ -4,11 +4,16 @@ import Microsoft from "../assets/microsoft.png";
 import Azure from "../assets/azure.jpg";
 import Sophos from "../assets/sophos.jpg";
 import Panda from "../assets/panda.png";
+import logicielIcon from "../assets/logicieIcon.png";
+import Carousel from "../components/carouselLogiciel";
 
 const LogicielBody: React.FC = () => {
   return (
     <div className="reactDivMaterial2">
-        <h2 className="téléphonieH2">Nos solutions d'intégrations de logiciels</h2>
+        <div className="nosSolutionsAndlogicielIconDiv">
+            <h2 className="téléphonieH2">Nos solutions d'intégrations de logiciels</h2>
+            <img className="nosSolutionsAndlogicielIcon"src={logicielIcon} alt="" />
+        </div>
         <div className="MatérieldivTxt">
             <p className="pWithMicrosoftLogo">Solution de gestion (Partenaire Sage, Partenaire EBP) et intégrations des produits <div className="microsoftDiv"><img className="microsoftLogo"src={Microsoft} alt="" /><p className="microsoftTxt">Microsoft</p></div> dans les solutions de gestion. </p>
             <p className="pWithOfficeLogo">Partenaire microsoft vente et Intégration systèmes d'exploitations, développement sur toutes la gamme <div className="officeDiv"><img className="office"src={Office} alt="" /><p className="officeTxt">Office</p></div>)</p>
@@ -38,7 +43,8 @@ const LogicielBody: React.FC = () => {
                     <div className="pandaDiv">         
                         <img className="pandaImg"src={Panda} alt="" />
                         <p className="pandaTxt">Panda sécurité</p>
-                    </div>          
+                    </div>   
+                    <Carousel/>       
             </div>
         </div>
         

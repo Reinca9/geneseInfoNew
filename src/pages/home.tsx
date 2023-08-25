@@ -1,7 +1,7 @@
 import React from "react";
 import 'react-toastify/dist/ReactToastify.css';
 import Navbar from "../components/navbar";
-import HomeBody from "../components/homeBody";
+import CarouselHome from "../components/carouselHome";
 import Footer from "../components/footer";
 
 const Home: React.FC = () => {
@@ -10,7 +10,8 @@ const Home: React.FC = () => {
   return (
   <div>
    <Navbar /> 
-   <HomeBody/>
+   <hr  className="hrHomeBody"/>
+   <CarouselHome/>
    <Footer/>
   </div>
   );

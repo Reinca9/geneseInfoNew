@@ -4,9 +4,10 @@ import "react-responsive-carousel/lib/styles/carousel.min.css";
 import 'tailwindcss/tailwind.css';
 import { useRef, useState, useEffect } from 'react';
 import { Link } from "react-router-dom";
-import AsusPcImg from "../assets/greenPC.jpg";
-import Forfait from "../assets/forfat.png";
-import Win11 from "../assets/Win11_Pro_SoftwareShark_1920x1920.jpg";
+import PCcarousel from "../assets/PCcarousel.jpg";
+import Mobiles from "../assets/Mobiles.webp";
+import Server from "../assets/ServerCarousel.jpg";
+import Office from "../assets/OfficeCarousel.jpg";
 
 const CarouselHome: React.FC = () => {
   const totalSlides = 5; 
@@ -39,12 +40,10 @@ const CarouselHome: React.FC = () => {
         onChange={handleChange}
         ref={carouselRef}>
         <div className="carouselHomeFrame">
+                <img className="carouselHomeImg"src={Mobiles} alt="" />
                 <h1>Communication et Téléphonie</h1>
-                <img className="carouselHomeImg"src={Forfait} alt="" />
                 <p>Abonnement lien internet (Fibre FTTH, Fibre dédier FTTO, 5G illimitées VDSL)
-                    <br /><br />
                     Couverture et éligibilité sur demande. 
-                    <br /><br />
                     Téléphonie fixe.
                 </p>
                 <Link to="/téléphonie">
@@ -52,19 +51,28 @@ const CarouselHome: React.FC = () => {
                 </Link>
                 </div>
         <div className="carouselHomeFrame">
-        <h1>Matériel informatique</h1>
-                <img className="carouselHomeImg" src={AsusPcImg} alt="" />
+                <img className="carouselHomeImg" src={PCcarousel} alt="" />
+                <h1>Matériel informatique</h1>
                 <p>PC, serveurs, NAS, Tablettes, Smartphone, Camera sur IP et accessoires.</p>
                 <Link to="/matériel">
                     <button className="productCardsButton">En savoir plus</button>
                 </Link>
         </div>
-        <div className="carouselHomeFrame">
+        <div className="carouselHomeFrame">          
+                <img className="carouselHomeImg"src={Office} alt="" />
                 <h1>Intégration de logiciels</h1>
-                <img className="carouselHomeImg"src={Win11} alt="" />
                 <p>Solutions de gestion.
                 Partenaire microsoft et intégrations OS, développement sur toutes la gamme office.
                 Solutions Cloud.
+                </p>
+                <Link to="/logiciels">
+                    <button className="productCardsButton">En savoir plus</button>
+                </Link>
+        </div>
+        <div className="carouselHomeFrame">
+                <img className="carouselHomeImg"src={Server} alt="" />
+                <h1>Hébergement sur nos servers ou externalisé</h1>
+                <p>Solutions d'hébergement, serveurs disponibles en interne.
                 </p>
                 <Link to="/logiciels">
                     <button className="productCardsButton">En savoir plus</button>

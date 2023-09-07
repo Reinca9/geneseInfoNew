@@ -1,0 +1,38 @@
+{
+  "name": "server",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "github.com/Reinca9/BellaPizza"
+  },
+  "keywords": [
+    "back",
+    "end",
+    "react",
+    "project"
+  ],
+  "author": "reinca",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^1.4.0",
+    "bcrypt": "^5.1.0",
+    "body-parser": "^1.20.2",
+    "cookie-parser": "^1.4.6",
+    "cors": "^2.8.5",
+    "dotenv": "^16.0.3",
+    "express": "^4.18.2",
+    "jsonwebtoken": "^9.0.1",
+    "mongoose": "^7.3.0",
+    "mysql": "^2.18.1",
+    "mysql2": "^3.3.5",
+    "react-cookie": "^4.1.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.22"
+  }
+}
